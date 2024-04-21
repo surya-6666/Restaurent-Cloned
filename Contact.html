@@ -1,0 +1,18 @@
+1. npm install json-server
+2.create a db.json file at RootLevel(ie.. ->at the app level)and paste the below object as sample data in that and modify accordingly...
+------
+{
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+----------
+3. json-server --watch db.json
